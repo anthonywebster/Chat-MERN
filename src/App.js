@@ -17,6 +17,7 @@ function App() {
   const handleEnter = (event) => {
     if (event.key === "Enter") {
       console.log(messageForm);
+      messageForm.current.dispatchEvent(new Event('submit'))
       // messageForm.current.submit();
       // messageForm.current.onSubmit();
     }
